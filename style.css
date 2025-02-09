@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.9);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1em 0;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+#content {
+    padding-top: 60px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+#home {
+    background-color: #1e1e1e;
+}
+
+#about {
+    background-color: #282828;
+}
+
+#skills {
+    background-color: #303030;
+}
+
+#projects {
+    background-color: #383838;
+}
+
+#experience {
+    background-color: #404040;
+}
+
+#contact {
+    background-color: #484848;
+}
+
+#3d-animation {
+    width: 100%;
+    height: 400px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.project-card,
+.experience-card {
+    background-color: #505050;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card h3,
+.experience-card h3 {
+    color: #00aaff;
+    margin-bottom: 0.5em;
+}
+
+.project-card ul,
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 2em;
+    margin-top: 0.5em;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-container li {
+    margin: 0.5em 0;
+}
